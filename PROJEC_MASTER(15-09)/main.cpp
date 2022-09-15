@@ -1,5 +1,5 @@
 
-/* FUNÇÃO MAIN */
+/* FUNï¿½ï¿½O MAIN */
 
 #include "stdafx.h"
 #include "Principal.h"
@@ -7,7 +7,9 @@
 
 int main()
 { 
-    //Função sem parâmetro nao colocar () na chamada
+    setlocale(LC_ALL, "Portuguese");
+
+    //Funï¿½ï¿½o sem parï¿½metro nao colocar () na chamada
     Principal ObjetoPrincipal;
 
     return 0;

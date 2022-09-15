@@ -8,8 +8,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include <tchar.h>
-//#include <Windows.h>
+#include <tchar.h>
+#include <Windows.h>
+#include <locale.h>
 
 // TODO: reference additional headers your program requires here
 //#include <stdio.h>
