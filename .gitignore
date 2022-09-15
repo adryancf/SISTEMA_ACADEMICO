@@ -12,3 +12,9 @@ SLIDE7(15-09)/ProjectVS/ProjectVS.vcxproj
 SLIDE7(15-09)/ProjectVS/ProjectVS.vcxproj.filters
 SLIDE7(15-09)/ProjectVS/ProjectVS.vcxproj.user
 SLIDE7(15-09)/ProjectVS/.vs/ProjectVS/v17/ipch/AutoPCH/7dc4b434fcec0d6e/ALUNO.ipch
+*.vsidx
+*.lock
+*.db-shm
+*.db-wal
+*.opendb
+*.ipch
