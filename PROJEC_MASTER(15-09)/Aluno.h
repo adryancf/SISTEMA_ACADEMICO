@@ -2,6 +2,7 @@
 #include "Pessoa.h"
 
 //TESTANDO GITHUB
+//AULA 8
 
 class Aluno :
     public Pessoa
