@@ -3,8 +3,6 @@
 
 //TESTANDO GITHUB
 
-//Mais um teste
-
 class Aluno :
     public Pessoa
 {
