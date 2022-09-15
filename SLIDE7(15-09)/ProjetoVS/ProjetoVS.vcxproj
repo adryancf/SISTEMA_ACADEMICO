@@ -18,6 +18,43 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Aluno.cpp" />
+    <ClCompile Include="..\Departamento.cpp" />
+    <ClCompile Include="..\Disciplina.cpp" />
+    <ClCompile Include="..\Elem_aluno.cpp" />
+    <ClCompile Include="..\Elem_departamento.cpp" />
+    <ClCompile Include="..\Elem_disciplina.cpp" />
+    <ClCompile Include="..\Elem_univ.cpp" />
+    <ClCompile Include="..\ListaAlunos.cpp" />
+    <ClCompile Include="..\ListaDepartamento.cpp" />
+    <ClCompile Include="..\ListaDisciplinas.cpp" />
+    <ClCompile Include="..\ListaUniversidade.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Pessoa.cpp" />
+    <ClCompile Include="..\Principal.cpp" />
+    <ClCompile Include="..\Professor.cpp" />
+    <ClCompile Include="..\stdafx.cpp" />
+    <ClCompile Include="..\Universidade.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Aluno.h" />
+    <ClInclude Include="..\Departamento.h" />
+    <ClInclude Include="..\Disciplina.h" />
+    <ClInclude Include="..\Elem_aluno.h" />
+    <ClInclude Include="..\Elem_departamento.h" />
+    <ClInclude Include="..\Elem_disciplina.h" />
+    <ClInclude Include="..\Elem_univ.h" />
+    <ClInclude Include="..\ListaAlunos.h" />
+    <ClInclude Include="..\ListaDepartamento.h" />
+    <ClInclude Include="..\ListaDisciplinas.h" />
+    <ClInclude Include="..\ListaUniversidade.h" />
+    <ClInclude Include="..\Pessoa.h" />
+    <ClInclude Include="..\Principal.h" />
+    <ClInclude Include="..\Professor.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\Universidade.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,9 +163,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="ProjetoVS.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
