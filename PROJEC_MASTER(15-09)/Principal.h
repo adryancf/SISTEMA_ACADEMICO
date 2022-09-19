@@ -10,12 +10,7 @@
 class Principal
 {
 private:
-
-
-    ListaAlunos LAlunos;
-    ListaDepartamento LDept;
-    ListaDisciplinas LDisc;
-
+ 
 	Universidade UTFPR;
 	Universidade Princeton;
 	Universidade Cambridge;
@@ -44,10 +39,13 @@ private:
 	Disciplina TECPROG;
 	Disciplina FUNDAMENTOS;
 
-
-    //CRIAR
-    ListaUniversidade LUniv;
-
+	
+    	ListaUniversidade LUniv;
+	ListaDepartamento LDept;
+	ListaDisciplinas LDisc;
+	ListaAlunos LAlunos;
+	
+	
 	int dia_t;
 	int mes_t;
 	int ano_t;
@@ -56,21 +54,21 @@ public:
 	//Construtora
 	Principal();
 
-	//Destrutora: Tem a função de desalocar memória (Por padrão sem parâmetro)
+	//Destrutora: Tem a funÃ§Ã£o de desalocar memÃ³ria (Por padrÃ£o sem parÃ¢metro)
 	~Principal();
 
-	//Inicializações
+	//InicializaÃ§Ãµes
 
 	void Inicializa();
-    void InicializaUniversidade();
-    void InicializaDept();
-    void AssociacaoDept_Univ();
-    void InicializaProfessores();
-	void AssociacaoProfessores();
-	void InicializaAlunos();
-    void InicializaDisciplinas();
+	void InicializaUniversidade();
+    	void InicializaDept();
+    	void AssociacaoDept_Univ();
+    	void InicializaProfessores();
+    	void AssociacaoProfessores();
+    	void InicializaAlunos();
+    	void InicializaDisciplinas();
 
-	//Execuções
+	//ExecuÃ§Ãµes
 
 	void Executar();
 
@@ -80,13 +78,31 @@ public:
 
     //Cadastros
 
-    void CadDisciplina();
-    void CadDepartamento();
-    void CadAluno();
-    void CadUniv();
-
-    void Menu();
-    void MenuCad();
-    void MenuExe();
+	void CadUniv();
+	void CadDepartamento();
+	void CadDisciplina();
+	void CadAluno();
+	
+	void Menu();
+	void MenuCad();
+	void MenuExe();
+	
+	voidGravarTudo();
+	
+	voidGravarUniversidades();
+	voidGravarDepartamentos();
+	voidGravarDisciplinas();
+	voidGravarAlunos();
+	voidGravarProfessores();
+	
+	voidRecuperarTudo();
+	
+	voidRecuperarUniversidades();
+	voidRecuperarDepartamentos();
+	voidRecuperarDisciplinas();
+	voidRecuperarAlunos();
+	voidRecuperarProfessores();
+	
+		
 
 };
