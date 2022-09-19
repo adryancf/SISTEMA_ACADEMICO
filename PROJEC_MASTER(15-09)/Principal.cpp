@@ -14,6 +14,28 @@ Principal::Principal(){
 
 
 }
+
+/* Colocar em ORDEM e CODIFICAR as fun√ß√µes */
+
+void GravarTudo();
+	
+void GravarUniversidades();
+void GravarDepartamentos();
+void GravarDisciplinas();
+void GravarAlunos();
+void GravarProfessores();
+	
+void RecuperarTudo();
+	
+void RecuperarUniversidades();
+void RecuperarDepartamentos();
+void RecuperarDisciplinas();
+void RecuperarAlunos();
+void RecuperarProfessores();
+
+
+
+
 void Principal::Inicializa()
 {
     InicializaUniversidade();
@@ -34,13 +56,13 @@ void Principal::InicializaUniversidade()
 }
 void Principal::InicializaDept()
 {
-	DAINF.setDept("Inform·tica");
+	DAINF.setDept("Inform√°tica");
 	LDept.inclueDept(&DAINF);
 	CALEM.setDept("Linguas Estrangeiras");
 	LDept.inclueDept(&CALEM);
-	Fisica_Pr.setDept("FÌsica");
+	Fisica_Pr.setDept("F√≠sica");
 	LDept.inclueDept(&Fisica_Pr);
-	Matematica_Cam.setDept("Matem·tica");
+	Matematica_Cam.setDept("Matem√°tica");
     LDept.inclueDept(&Matematica_Cam);
 
 	AssociacaoDept_Univ();
@@ -90,9 +112,9 @@ void Principal::InicializaAlunos()
 	LAlunos.incluaAluno(&Fernando);
 	Vinicius.start(6, 2, 2001, "Vinicius Pires");
 	LAlunos.incluaAluno(&Vinicius);
-	Mariana.start(15, 7, 2008, "Mariana GonÁalves");
+	Mariana.start(15, 7, 2008, "Mariana Gon√ßalves");
 	LAlunos.incluaAluno(&Mariana);
-	Maria.start(10, 5, 2001, "Maria FranÁa");
+	Maria.start(10, 5, 2001, "Maria Fran√ßa");
 	LAlunos.incluaAluno(&Maria);
 	Adriana.start(5, 3, 1978, "Adriana Feres");
 	LAlunos.incluaAluno(&Adriana);
@@ -108,8 +130,8 @@ void Principal::InicializaDisciplinas()
 
 
     ED1.setNome("Estrutura de dados 1");
-    TECPROG.setNome("Tecnicas de ProgramaÁ„o");
-    FUNDAMENTOS.setNome("Fundamentos de ProgramaÁ„o 1");
+    TECPROG.setNome("Tecnicas de Programa√ß√£o");
+    FUNDAMENTOS.setNome("Fundamentos de Programa√ß√£o 1");
 
     LDisc.inclueDisciplina(&ED1);
     LDisc.inclueDisciplina(&TECPROG);
@@ -248,7 +270,7 @@ void Principal::CadDisciplina()
 
     }
 
-    else{ cout << "Departamento inv·lido!" << endl; getchar();}
+    else{ cout << "Departamento inv√°lido!" << endl; getchar();}
     getchar();
 
 }
@@ -296,7 +318,7 @@ void Principal::CadDepartamento ()
         cout << "Departamento Cadastrado!" << endl;
     }
 
-    else{cout << "Universidade inv·lida!" << endl;}
+    else{cout << "Universidade inv√°lida!" << endl;}
     getchar();
 }
 void Principal::CadAluno ()
@@ -328,7 +350,7 @@ void Principal::CadAluno ()
         disc_m = LDisc.localizar((const char*) disc_matricula);
 
         if(disc_m!=NULL){disc_m->incluaAluno(a_add);}
-        else{cout << "Disciplina inv·lida!" << endl;}
+        else{cout << "Disciplina inv√°lida!" << endl;}
     }
 
 
@@ -348,7 +370,7 @@ void Principal::MenuCad()
         //system("cls");
         system("clear");
 
-        cout << "Informe sua opÁ„o: " << endl;
+        cout << "Informe sua op√ß√£o: " << endl;
         cout << "1 - Cadastrar aluno" << endl;
         cout << "2 - Cadastrar disciplina" << endl;
         cout << "3 - Cadastrar departamento" << endl;
@@ -372,7 +394,7 @@ void Principal::MenuCad()
             case 5:{ cout << "FIM" << endl; getchar();}
                 break;
 
-            default:{ cout << " Caractere Inv·lido!" << endl; getchar(); }
+            default:{ cout << " Caractere Inv√°lido!" << endl; getchar(); }
 
         }
     }
@@ -389,7 +411,7 @@ void Principal::MenuExe()
         //system("cls");
         //system("clear");
 
-        cout << "Informe sua opÁ„o: " << endl;
+        cout << "Informe sua op√ß√£o: " << endl;
         cout << "1 - Listar alunos" << endl;
         cout << "2 - Listar disciplinas" << endl;
         cout << "3 - Listar departamentos" << endl;
@@ -414,7 +436,7 @@ void Principal::MenuExe()
             case 5:{ cout << "FIM" << endl; getchar();}
                 break;
 
-            default:{ cout << " Caractere Inv·lido!" << endl; getchar(); }
+            default:{ cout << " Caractere Inv√°lido!" << endl; getchar(); }
 
         }
     }
@@ -429,9 +451,9 @@ void Principal::Menu()
         //system("cls");
         system("clear");
 
-        cout << "-------------- Bem vindo ao Sistema AcadÍmico! -------------- \n" << endl;
+        cout << "-------------- Bem vindo ao Sistema Acad√™mico! -------------- \n" << endl;
 
-        cout << "Informe sua opÁ„o: " << endl;
+        cout << "Informe sua op√ß√£o: " << endl;
         cout << "1 - Cadastro" << endl;
         cout << "2 - Executar" << endl;
         cout << "3 - Sair" << endl;
@@ -447,7 +469,7 @@ void Principal::Menu()
             case 3:{ cout << "Fim do Programa!" << endl;}
                 break;
 
-            default:{ cout << " Caractere Inv·lido!" << endl; getchar(); }
+            default:{ cout << " Caractere Inv√°lido!" << endl; getchar(); }
 
         }
     }
