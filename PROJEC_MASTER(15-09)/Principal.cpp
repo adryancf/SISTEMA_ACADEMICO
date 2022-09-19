@@ -2,18 +2,8 @@
 #include "stdafx.h"
 #include "Principal.h"
 
-Principal::Principal(){
+Principal::Principal(){ Inicializa(); Executar(); }
 
-	//Posso chamar as construtoras do objeto aqui!
-	//Adryan(20, 10, 2004, "Adryan Castro"),
-	//Einstein(14, 3, 1879, "Albert Einstein"),
-	//Newton(4, 1, 1643, "Isaac Newton")
-
-    Inicializa();
-	Executar();
-
-
-}
 
 /* Colocar em ORDEM e CODIFICAR as funções */
 /*

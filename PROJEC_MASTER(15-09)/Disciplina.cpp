@@ -1,10 +1,10 @@
 #include "Disciplina.h"
 #include "stdafx.h"
 
-Disciplina::Disciplina()
+Disciplina::Disciplina(int i)
 {
     dept_associado = NULL;
-    id = 0;
+    id = i;
 }
 
 Disciplina::~Disciplina()
@@ -24,7 +24,7 @@ void Disciplina::setDept(Departamento* d)
 {
     dept_associado = d;
 
-    //(this) - Ponteiro para o Objeto que chamou a função!!!
+    //(this) - Ponteiro para o Objeto que chamou a funï¿½ï¿½o!!!
     d->incluaDisciplina(this);
 
 }

@@ -9,8 +9,8 @@ Professor::Professor(int dia_n, int mes_n, int ano_n, const char* getnome):
 }
 
 
-Professor::Professor():
-	Pessoa() // Chama a construtora sem parâmetros da classe base
+Professor::Professor(int i):
+	Pessoa(i) // Chama a construtora sem parï¿½metros da classe base
 {
 	univ_Personal = NULL; dept_Personal = NULL;
 }

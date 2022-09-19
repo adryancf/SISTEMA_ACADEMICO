@@ -12,7 +12,7 @@ private:
 
 public:
     Professor(int dia_n, int mes_n, int ano_n, const char* getnome = "");
-    Professor();
+    Professor(int i = -1);
     ~Professor();
 
     void SetUniversidade(Universidade* u);

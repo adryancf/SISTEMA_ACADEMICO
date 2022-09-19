@@ -9,12 +9,15 @@ protected:
     int mes;
     int ano;
     int idade;
+    int id;
     char nome[30];
 
 public:
 
     //Nao há valor default no dia mes e ano, pois essas infos sao obrigatorias!
     Pessoa(int dia_n, int mes_n, int ano_n, const char* getnome="");
+
+    Pessoa(int i);
 
     // Chamada para zerar todos os atributos
     Pessoa(); // Se não fizermos isso, o compilador a cria

@@ -9,7 +9,7 @@ Pessoa::Pessoa(int dia_n, int mes_n, int ano_n, const char* getnome)
 {
     start(dia_n, mes_n, ano_n, getnome);
 }
-
+Pessoa::Pessoa(int i) { id = i; }
 //Construtora sem parâmetros
 Pessoa::Pessoa(){start(0, 0, 0);}
 Pessoa::~Pessoa(){}

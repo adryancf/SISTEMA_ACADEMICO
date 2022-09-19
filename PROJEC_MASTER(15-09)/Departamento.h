@@ -10,12 +10,13 @@ class Departamento
 {
 private:
 	char nome_dept[30];
+	int id;
 	Universidade *univ;
 
 	ListaDisciplinas* ObjLDisc;
 
 public:
-	Departamento();
+	Departamento(int i = -1);
 	~Departamento();
 
 	void setDept(char* n);

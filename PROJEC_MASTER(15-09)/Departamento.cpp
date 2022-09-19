@@ -6,8 +6,9 @@
 #include "Disciplina.h"
 #include "ListaDisciplinas.h"
 
-Departamento::Departamento()
+Departamento::Departamento(int i)
 {
+    id = i;
 	ObjLDisc = new ListaDisciplinas(-1, "");
 	univ = NULL;
 }

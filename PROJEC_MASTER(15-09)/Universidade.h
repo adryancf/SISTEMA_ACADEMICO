@@ -5,12 +5,13 @@ class Universidade
 {
 private:
     char nome_universidade[150];
+	int id;
     ListaDepartamento ObjLdept;
 
 public:
 
 	//Universidade();
-	Universidade();
+	Universidade(int i = -1);
 	~Universidade();
 
 	void set_nome(char* n);
