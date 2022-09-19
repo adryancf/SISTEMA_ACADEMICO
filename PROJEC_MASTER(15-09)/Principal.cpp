@@ -16,7 +16,7 @@ Principal::Principal(){
 }
 
 /* Colocar em ORDEM e CODIFICAR as funções */
-
+/*
 void GravarTudo();
 	
 void GravarUniversidades();
@@ -32,7 +32,7 @@ void RecuperarDepartamentos();
 void RecuperarDisciplinas();
 void RecuperarAlunos();
 void RecuperarProfessores();
-
+*/
 
 
 

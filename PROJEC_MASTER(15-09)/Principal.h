@@ -40,7 +40,7 @@ private:
 	Disciplina FUNDAMENTOS;
 
 	
-    	ListaUniversidade LUniv;
+    ListaUniversidade LUniv;
 	ListaDepartamento LDept;
 	ListaDisciplinas LDisc;
 	ListaAlunos LAlunos;
@@ -61,12 +61,12 @@ public:
 
 	void Inicializa();
 	void InicializaUniversidade();
-    	void InicializaDept();
-    	void AssociacaoDept_Univ();
-    	void InicializaProfessores();
-    	void AssociacaoProfessores();
-    	void InicializaAlunos();
-    	void InicializaDisciplinas();
+    void InicializaDept();
+    void AssociacaoDept_Univ();
+    void InicializaProfessores();
+    void AssociacaoProfessores();
+    void InicializaAlunos();
+    void InicializaDisciplinas();
 
 	//Execuções
 
@@ -87,7 +87,9 @@ public:
 	void MenuCad();
 	void MenuExe();
 	
-	voidGravarTudo();
+	//Gravação Arquivos
+	/*
+	void GravarTudo();
 	
 	void GravarUniversidades();
 	void GravarDepartamentos();
@@ -103,6 +105,6 @@ public:
 	void RecuperarAlunos();
 	void RecuperarProfessores();
 	
-		
+	*/	
 
 };
