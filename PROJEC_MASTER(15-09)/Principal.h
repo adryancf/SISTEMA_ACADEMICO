@@ -89,19 +89,19 @@ public:
 	
 	voidGravarTudo();
 	
-	voidGravarUniversidades();
-	voidGravarDepartamentos();
-	voidGravarDisciplinas();
-	voidGravarAlunos();
-	voidGravarProfessores();
+	void GravarUniversidades();
+	void GravarDepartamentos();
+	void GravarDisciplinas();
+	void GravarAlunos();
+	void GravarProfessores();
 	
-	voidRecuperarTudo();
+	void RecuperarTudo();
 	
-	voidRecuperarUniversidades();
-	voidRecuperarDepartamentos();
-	voidRecuperarDisciplinas();
-	voidRecuperarAlunos();
-	voidRecuperarProfessores();
+	void RecuperarUniversidades();
+	void RecuperarDepartamentos();
+	void RecuperarDisciplinas();
+	void RecuperarAlunos();
+	void RecuperarProfessores();
 	
 		
 
