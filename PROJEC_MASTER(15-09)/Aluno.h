@@ -8,12 +8,13 @@ class Aluno :
     public Pessoa
 {
 private:
+    int id;
     int RA;
 
 public:
 
     Aluno(int dia_n, int mes_n, int ano_n, const char* getnome = "");
-    Aluno(int i=-1);
+    Aluno( int i = -1 );
 
     ~Aluno();
 

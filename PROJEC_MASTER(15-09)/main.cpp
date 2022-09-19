@@ -1,5 +1,5 @@
 
-/* FUN«√O MAIN */
+/* FUN√á√ÉO MAIN */
 
 #include "stdafx.h"
 #include "Principal.h"
@@ -7,7 +7,7 @@
 
 int main()
 { 
-    //FunÁ„o sem par‚metro nao colocar () na chamada
+    //Fun√ß√£oo sem par√¢metro nao colocar () na chamada
     Principal ObjetoPrincipal;
 
     return 0;

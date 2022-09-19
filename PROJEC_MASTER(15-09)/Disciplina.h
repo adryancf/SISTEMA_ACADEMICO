@@ -17,8 +17,7 @@ class Disciplina
         Departamento *dept_associado;
 
     public:
-        Disciplina();
-        //Disciplina(char* ac = "");
+        Disciplina(int i = -1);
         ~Disciplina();
 
         void setid(int i);
