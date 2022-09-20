@@ -14,3 +14,4 @@ int Aluno::getRA()
 {
 	return RA; 
 } 
+int getId(){return id;}

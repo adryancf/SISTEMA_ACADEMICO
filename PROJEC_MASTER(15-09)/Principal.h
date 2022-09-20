@@ -87,13 +87,15 @@ public:
 	void CadDepartamento();
 	void CadDisciplina();
 	void CadAluno();
+	void CadProfessor();
 	
 	void Menu();
 	void MenuCad();
 	void MenuExe();
-	
+	void MenuGravar();
+	void MenuRecuperar();
 	//Gravação Arquivos
-	/*
+	
 	void GravarTudo();
 	
 	void GravarUniversidades();
@@ -110,6 +112,5 @@ public:
 	void RecuperarAlunos();
 	void RecuperarProfessores();
 	
-	*/	
-
+	
 };

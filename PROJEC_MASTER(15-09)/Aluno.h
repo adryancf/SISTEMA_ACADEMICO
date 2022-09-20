@@ -20,5 +20,7 @@ public:
 
     void setRA(int registro);
     int getRA();
+
+    int getId();
 };
 

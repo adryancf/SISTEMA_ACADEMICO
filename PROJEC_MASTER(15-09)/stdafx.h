@@ -17,7 +17,4 @@
 
 #include <string.h>
 #include <iostream>
-using std::cout;
-using std::endl;
-using std::cerr;
-using std::cin;
+using namespace std;

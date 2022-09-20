@@ -25,6 +25,8 @@ public:
 	void listeAluno();
 	void listeAluno2();
 
+	void graveAlunos();
+	void recAlunos();
 
 
 };

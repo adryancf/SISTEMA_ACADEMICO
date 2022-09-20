@@ -55,10 +55,10 @@ void ListaAlunos::incluaAluno(Aluno* a)
     else
     {
         if (a != NULL)
-            cout << " Aluno não incluido. Turma já lotada com " << num_alunos << endl;
+            cout << " Aluno nï¿½o incluido. Turma jï¿½ lotada com " << num_alunos << endl;
 
         else
-            cout << "Ponteiro do aluno está nulo!!!" << endl;
+            cout << "Ponteiro do aluno estï¿½ nulo!!!" << endl;
     }
 
 }
@@ -95,3 +95,66 @@ void ListaAlunos::listeAluno2()
     }
 
 }
+
+void ListaAlunos::graveAlunos()
+{
+
+    ofstream gravadorAlunos ( "alunos.dat", ios::out );
+    if ( !gravadorAlunos )
+    {
+        cerr << " Arquivo nÃ£o pode ser aberto " << endl;
+        fflush ( stdin );
+        getchar( );
+        return;
+    }
+
+    Elem_aluno* aux_elm;
+    aux_elm = atual_aluno;
+    
+    while ( aux_elm != NULL)
+    {
+        Aluno * aux_a;
+        aux_a = aux_elm->getAluno();
+        gravadorAlunos << aux_a->getId () << ' ' << aux_a->getRA () << ' ' << aux_a->getNome () << endl;
+        aux_elm = aux_elm->p_proximo;
+    }
+
+    gravadorAlunos.close ( );
+
+
+}
+void recAlunos()
+{
+
+    ifstream recAlunos ( "alunos.dat", ios::in );
+    if ( !recAlunos )
+    {
+        cerr << " Arquivo nÃ£o pode ser aberto " << endl;
+        fflush ( stdin );
+        getchar( );
+        return;
+    }
+
+    Aluno * aux_a = NULL;
+    int id, RA;
+    char nome[150];
+
+    while ( recAlunos >> id >> RA >> nome;)
+    {
+        if(0 != strcmp(nome, ""))
+        {
+            aux_a = new Aluno(id);
+            aux_a->setRA(RA);
+            aux_a->setNome(nome);
+
+            incluaAluno(aux_a);
+        }
+
+    }
+
+    recAlunos.close ();
+
+
+
+}
+
